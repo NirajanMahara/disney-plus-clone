@@ -1,3 +1,51 @@
+👉 Building a Disney+ Clone App 💻
+👉 How to handle authentication with Firebase 🔑
+👉 How to upload images to Firebase Storage and use them on your site! 🖥️
+👉 Real-time database with Firebase’s Firestore 🔥
+[DEMO Disney+](https://disney-plus-clone-2003jan29.web.app)
+🌟 Contents 🌟
+⌨️: Disney+ Clone Build Showcase
+⌨️: Initialize Project (Create React App)
+⌨️: Clean Up Project
+⌨️: Global Styling
+⌨️: Add Mobile Responsiveness
+⌨️: Create Login Component
+⌨️: Center Text
+⌨️: Add Background Image
+⌨️: Add Logos Image
+⌨️: Add Signup Button
+⌨️: Add Description
+⌨️: Add Logos Image
+⌨️: Add navBar with Disney Logo
+⌨️: Add navMenu Setup
+⌨️: Add Home navMenu Icon
+⌨️: Add Remaining navMenus in Header
+⌨️: Add Login Button
+⌨️: Setup Firebase
+⌨️: Add Sign In with Google Popup
+⌨️: Add Complete Sign In Functionality with Redux
+⌨️: Finish Login Functionality & Redirect User
+⌨️: Add Sign Out Functionality
+⌨️: Add Background on Home Page
+⌨️: Add React Slick Carousel
+⌨️: Add Image Slider
+⌨️: Add Viewers & Images
+⌨️: Add Video to Viewers
+⌨️: Add Recommends Component
+⌨️: Setup Originals, New Disney and Recommends Components
+⌨️: Create Redux State Slice for Getting Movies
+⌨️: Add to Firebase & Display Movies
+⌨️: Stuff ’n’ Things
+⌨️: Add all Movie Categories
+⌨️: Add Detail Background Image
+⌨️: Add Image Title
+⌨️: Add Play Button
+⌨️: Add Trailer
+⌨️: Add the addList Icon Next to Trailer
+⌨️: Add Subtitle and Description
+⌨️: Get Detail of Movie from Firebase
+⌨️: Deploy Disney+ to Firebase
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
