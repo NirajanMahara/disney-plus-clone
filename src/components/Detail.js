@@ -1,19 +1,41 @@
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import db from '../firebase';
 
 const Detail = (props) => {
+    const { id } = useParams();
+    const [detailData, setDetailData] = useState({});
+
+    useEffect(() => {
+        db.collection("movies")
+        .doc(id)
+        .get()
+        .then((doc) => {
+            if (doc.exists) {
+                setDetailData(doc.data());
+            } else {
+                console.log("No such document in firebase 🔥");
+            }
+        })
+        .catch((error) => {
+            console.log("Error getting document 🔥:", error);
+        })
+    }, [id])
+
     return (
         <Container>
             <Background>
                 <img 
-                    src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B409C2A425D58C32D822EB633C7CAE3DC910DC2FC62D2B1807A0BB092C531E9A/scale?width=1440&aspectRatio=1.78&format=jpeg" 
-                    alt="" 
+                    src={detailData.backgroundImg}
+                    alt={detailData.title}
                 />
             </Background>
 
             <ImageTitle>
                 <img 
-                    src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2041CE26663867FC4EF20377B8625BD629E619452E23BCDB1AB259DD475C2EA1/scale?width=1440&aspectRatio=1.78" 
-                    alt="" 
+                    src={detailData.titleImg} 
+                    alt={detailData.title}
                 />
             </ImageTitle>
 
@@ -38,8 +60,8 @@ const Detail = (props) => {
                     </GroupWatch>
                 </Controls>
 
-                <SubTitle>SubTitle</SubTitle>
-                <Description>Description</Description>
+                <SubTitle>{detailData.subTitle}</SubTitle>
+                <Description>{detailData.description}</Description>
             </ContentMeta>
         </Container>
     )
