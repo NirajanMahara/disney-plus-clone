@@ -9,6 +9,13 @@ const Detail = (props) => {
                     alt="" 
                 />
             </Background>
+
+            <ImageTitle>
+                <img 
+                    src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2041CE26663867FC4EF20377B8625BD629E619452E23BCDB1AB259DD475C2EA1/scale?width=1440&aspectRatio=1.78" 
+                    alt="" 
+                />
+            </ImageTitle>
         </Container>
     )
 }
@@ -37,6 +44,24 @@ const Background = styled.div`
         @media (max-width: 768px) {
             width: initial;
         }
+    }
+`
+
+const ImageTitle = styled.div`
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 0px auto;
+    height: 30vw;
+    min-height: 170px;
+    padding-bottom: 25px;
+    width: 100%;
+
+    img {
+        max-width: 600px;
+        min-width: 200px;
+        width: 35vw;
     }
 `
 
